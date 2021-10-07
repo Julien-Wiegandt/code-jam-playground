@@ -100,6 +100,7 @@ def selection_sort(array):
 # Worst Case: O(n^2)
 # Average Case: O(n*logn)
 # Best case: O(n*logn)
+# 
 def quick_sort(array, start, end):
     if(start<end):
         # Choose the pivot value
@@ -194,39 +195,40 @@ def radix_sort(array):
         return res
 
 
-array = random_array(n=20000,min=0, max=100)
-print("for n = ",len(array))
-begin = time.process_time()
-insertion_sort(array)
-end = time.process_time()
-print("insertion_sort exec time : ",end-begin)
+array = random_array(n=10,min=0, max=20)
+print(array)
+# print("for n = ",len(array))
+# begin = time.process_time()
+# insertion_sort(array)
+# end = time.process_time()
+# print("insertion_sort exec time : ",end-begin)
 
-begin = time.process_time()
-bubble_sort(array)
-end = time.process_time()
-print("bubble_sort exec time : ",end-begin)
+# begin = time.process_time()
+# bubble_sort(array)
+# end = time.process_time()
+# print("bubble_sort exec time : ",end-begin)
 
-begin = time.process_time()
-selection_sort(array)
-end = time.process_time()
-print("selection_sort exec time : ",end-begin)
+# begin = time.process_time()
+# selection_sort(array)
+# end = time.process_time()
+# print("selection_sort exec time : ",end-begin)
 
-begin = time.process_time()
-quick_sort(array, 0, len(array)-1)
-end = time.process_time()
-print("quick_sort exec time : ",end-begin)
+# begin = time.process_time()
+# quick_sort(array, 0, len(array)-1)
+# end = time.process_time()
+# print("quick_sort exec time : ",end-begin)
 
-begin = time.process_time()
-merge_sort(array)
-end = time.process_time()
-print("merge_sort exec time : ",end-begin)
+# begin = time.process_time()
+# merge_sort(array)
+# end = time.process_time()
+# print("merge_sort exec time : ",end-begin)
 
-begin = time.process_time()
-counting_sort(array)
-end = time.process_time()
-print("counting_sort exec time : ",end-begin)
+# begin = time.process_time()
+# counting_sort(array)
+# end = time.process_time()
+# print("counting_sort exec time : ",end-begin)
 
-begin = time.process_time()
-radix_sort(array)
-end = time.process_time()
-print("radix_sort exec time : ",end-begin)
+# begin = time.process_time()
+# radix_sort(array)
+# end = time.process_time()
+# print("radix_sort exec time : ",end-begin)
