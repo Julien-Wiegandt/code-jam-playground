@@ -142,6 +142,10 @@ Counting sort is very effective for sorting small signed items. When it comes to
 
 ### Description
 
+Radix sorting is a variant of counting sort, to stay close to a linear complexity with a large number list.
+
+Indeed, we will use the counting sort, but only on each digit of the numbers in the list. To be clearer, we first sort by units, then by tens etc. The occurrence table will therefore only take 10 values [0,9] at each iteration.
+
 ### Example
 
 ### Complexity
